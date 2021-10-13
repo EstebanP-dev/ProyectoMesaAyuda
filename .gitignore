@@ -118,6 +118,11 @@ ipch/
 *.vspx
 *.sap
 
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
 # Visual Studio Trace Files
 *.e2e
 
@@ -260,11 +265,6 @@ UpgradeLog*.XML
 UpgradeLog*.htm
 ServiceFabricBackup/
 *.rptproj.bak
-
-# SQL Server files
-*.mdf
-*.ldf
-*.ndf
 
 # Business Intelligence projects
 *.rdl.data
