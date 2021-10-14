@@ -25,17 +25,3 @@ SELECT Employees.Id AS IDEMPLE, Employees.Name AS EMPLENAME, Areas.Name AS AREA
 FROM Areas
 INNER JOIN Employees
 ON Areas.fk_Employee = Employees.Id
-
-SELECT 'IDEMPLE' AS EMPLEADO, 'EMPLENAME' AS NAME, [10] AS INF, [20] AS GH, [30] AS MANT, [40] AS CONT
-FROM
-(
-	SELECT Employees.Id AS IDEMPLE, Employees.Name AS EMPLENAME,Areas.Id AS IDAREA, Areas.Name AS AREA
-	FROM Areas
-	INNER JOIN Employees
-	ON Areas.fk_Employee = Employees.Id
-) AS SourceTable
-PIVOT
-(
-	AVG(IDAREA)
-	FOR IDEMPLE IN (INF,GH,MANT,CONT)
-) AS PIVOTTABLE

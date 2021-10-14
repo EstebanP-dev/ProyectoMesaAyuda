@@ -12,7 +12,7 @@ namespace ProyectoMesaAyuda.Pages.Areas
 {
     public partial class AreasForm : Form
     {
-        private Service.Areas service = new Service.Areas();
+        private Global.Service.Global service = new Global.Service.Global();
         public AreasForm()
         {
             InitializeComponent();
@@ -20,7 +20,7 @@ namespace ProyectoMesaAyuda.Pages.Areas
 
         private void ShowAreas()
         {
-            DataArea.DataSource = service.GetAreas();
+            DataArea.DataSource = service.GetData("Areas");
         }
 
         private void AreasForm_Load(object sender, EventArgs e)
