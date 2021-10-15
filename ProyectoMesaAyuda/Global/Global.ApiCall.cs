@@ -22,7 +22,8 @@ namespace ProyectoMesaAyuda.Global.ApiCall
         public DataTable GetData(string tableQuery)
         {
             command.Connection = connection.OpenConnection();
-            command.CommandText = $"SELECT * FROM {tableQuery}";
+            command.CommandText = $"Show{tableQuery}";
+            command.CommandType = CommandType.StoredProcedure;
             read = command.ExecuteReader();
 
             table.Load(read);

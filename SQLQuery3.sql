@@ -1,0 +1,10 @@
+﻿CREATE PROC ShowEmployees AS
+SELECT * FROM Employees GO
+
+EXEC ShowEmployees
+
+ALTER TABLE Areas 
+ALTER COLUMN fk_Employee VARCHAR(20) NULL
+
+ALTER TABLE Employees
+ALTER COLUMN fk_EmployeeBoss VARCHAR(20) NULL

@@ -15,7 +15,7 @@ CREATE TABLE Employees(
 	Cord_X DECIMAL(10,7),
 	Cord_Y DECIMAL(10,7),
 	fk_EmployeeBoss VARCHAR(20),
-	fk_Area VARCHAR(10) NOT NULL,
+	fk_Area VARCHAR(10),
 )
 
 ALTER TABLE Areas ADD CONSTRAINT CONSTfk_Employee 

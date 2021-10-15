@@ -77,6 +77,7 @@
     <Compile Include="Global\Global.ApiCall.cs" />
     <Compile Include="Global\Global.Service.cs" />
     <Compile Include="Models\Areas.cs" />
+    <Compile Include="Models\Employees.cs" />
     <Compile Include="Pages\Areas\AreasForm.cs">
       <SubType>Form</SubType>
     </Compile>
