@@ -1,4 +1,6 @@
-﻿INSERT INTO Areas(Id, Name, fk_Employee) VALUES
+﻿USE MesaAyuda
+
+INSERT INTO Areas(Id, Name, fk_Employee) VALUES
 ('10','INFORMÁTICA',NULL),
 ('20','GESTIÓN HUMANA',NULL),
 ('30','MANTENIMIENTO',NULL),

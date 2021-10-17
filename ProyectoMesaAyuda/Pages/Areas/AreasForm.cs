@@ -16,12 +16,12 @@ namespace ProyectoMesaAyuda.Pages.Areas
         public AreasForm()
         {
             InitializeComponent();
-            //var data = service.GetData("Employees");
-            //for (int i = 0; i < data.Rows.Count; i++)
-            //{
-            //    var e = data.Rows;
-            //    cbEmployees.Items.Add(e[i]["Name"].ToString());
-            //}
+            var data = service.GetData("Employees");
+            for (int i = 0; i < data.Rows.Count; i++)
+            {
+                var e = data.Rows;
+                cbEmployees.Items.Add(e[i]["Name"].ToString());
+            }
         }
 
         private void ShowAreas()

@@ -9,7 +9,7 @@ namespace ProyectoMesaAyuda
 {
     public class DBConnection
     {
-        private SqlConnection Connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\MesaAyuda.mdf;Integrated Security=True;Connect Timeout=30");
+        private SqlConnection Connection = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MesaAyuda;Integrated Security=True");
 
         public SqlConnection OpenConnection()
         {

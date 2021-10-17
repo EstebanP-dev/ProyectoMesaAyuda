@@ -1,7 +1,12 @@
-﻿CREATE PROC ShowEmployees AS
+﻿USE MesaAyuda
+
+CREATE PROC ShowEmployees AS
 SELECT * FROM Employees GO
 
-EXEC ShowEmployees
+CREATE PROC ShowAreas AS
+SELECT * FROM Areas GO
+
+EXEC ShowAreas
 
 ALTER TABLE Areas 
 ALTER COLUMN fk_Employee VARCHAR(20) NULL
